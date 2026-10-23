@@ -7,7 +7,7 @@ m6id.16xlarge) and the same hidden test suite (16 tests). `kvstore_impl.cc` here
 
 | | SkySynth | HydraKV |
 |---|---|---|
-| Hidden tests passed | **16/16** (each crash test run 3 times, all passed) | 12/16 and 13/16 (two gradings) |
+| Hidden tests passed | **16/16** and **16/16** (two gradings; each crash test run 3 times per grading, all passed) | 12/16 and 13/16 (two gradings) |
 | Throughput, benchmark (Mops/s) | **22.2** (runs: 22.19, 22.23) | 13.3 (runs: 13.21, 13.28, 13.32) |
 | Throughput, hidden replays on random 64-bit keys: exact / YCSB-A trace / Twitter ops (Mops/s) | 11.5 / 11.6 / 12.7 | **11.8 / 22.3 / 16.9** |
 | Disk-space check | pass (141 MiB peak for 47 MiB live) | pass (2,049 MiB peak for 47 MiB live) |
@@ -15,7 +15,7 @@ m6id.16xlarge) and the same hidden test suite (16 tests). `kvstore_impl.cc` here
 
 ## HydraKV's failed tests
 
-Verbatim from the hidden-suite logs. SkySynth passes all four, 3 of 3 runs each.
+Verbatim from the hidden-suite logs. SkySynth passes all four in both gradings, 3 of 3 runs each.
 
 | Test | What it checks | HydraKV (grading 1 / grading 2) | Log message |
 |---|---|---|---|
